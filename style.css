@@ -1,0 +1,682 @@
+/*
+Theme Name: Captive Reach
+Theme URI: http://captivereach.com/
+
+Author: Parallel6
+Author URI: http://www.parallel6.com/
+
+Template: twentytwelve
+
+Description: A child them of the 2012 theme for WordPress. It is a fully responsive theme that looks great on any device.
+
+Version: 1.1
+
+Tags: light, gray, white, one-column, two-columns, right-sidebar, flexible-width, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+*/
+
+/*@import url("../twentytwelve/style.css");*/
+
+/**** Bootstrap overrides ****/
+.navbar {
+    margin-bottom: 15px;
+}
+
+.navbar .nav li a {
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-top: 36px;
+	color: #fff;
+}
+
+.navbar-inner {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner {
+    box-shadow: none;
+}
+
+.navbar-inverse .navbar-inner {
+    background-color: transparent;
+    background-image: none;
+    border: none;
+}
+
+.navbar-inverse .nav .active > a,
+.navbar-inverse .nav .active > a:hover,
+.navbar-inverse .nav .active > a:focus {
+    background-color: transparent;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+    box-shadow: none;
+}
+
+.navbar-inverse .divider-vertical {
+    border-left-color: #d30000;
+    border-right-color: #d30000;
+}
+
+.navbar .divider-vertical {
+    height: 15px;
+    margin-top: 38px;
+}
+
+.navbar .btn,
+.navbar .btn-group {
+    margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+	body {
+	    padding-right: 0;
+	    padding-left: 0;
+	}
+
+	.navbar {
+	    padding-top: 0;
+	}
+
+	.navbar .nav li a {
+		padding-top: 9px;
+	}
+
+	.navbar-inverse .nav-collapse .nav > li > a:hover,
+	.navbar-inverse .nav-collapse .dropdown-menu a:hover {
+		background-color: transparent;
+	}
+}
+/**** Bootstrap overrides ****/
+
+/*
+ ## Global styles
+ */
+body {
+	background: url("images/honeycomb-w.png");
+}
+
+/* Unstyled lists */
+#footer .links,
+.pricing #prices ul {
+	margin: 0;
+}
+
+#footer .links li,
+.pricing #prices ul li {
+	list-style-type: none;
+}
+
+.blog #content .c,
+.usecases #content .c,
+.technology #content .c,
+.technology #content .d,
+.technology #content .e {
+	margin-top: 30px;
+}
+
+#header,
+#footer {
+	background: #0c0d0d url("images/header.png") repeat-x;
+}
+
+#footer .container,
+.contact #content .container,
+.pricing #content .container,
+.usecases #content .container,
+.technology #content .container {
+	width: 900px;	
+}
+
+#header {
+	-webkit-box-shadow: 0 4px 10px -2px #000000;
+	-moz-box-shadow: 0 4px 10px -2px #000000;
+	box-shadow: 0 4px 10px -2px #000000;
+	padding-top: 20px;
+}
+
+
+#footer {
+	padding: 30px 0;
+	color: #fff;
+}
+
+#footer .links,
+#footer .links li {
+	float: left;
+}
+
+#footer p,
+#footer .links li a {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+}
+
+#footer .links li.divider-vertical {
+	border-right: 1px solid #d30000;
+	border-left: 1px solid #d30000;
+	margin: 5px 20px 0 20px;
+	height: 10px;
+}
+
+#footer .r {
+	text-align: right;
+}
+
+.social_links {
+	margin: 0 0 10px;
+}
+
+.socials {
+	background: url("images/socials.png") no-repeat;
+	display: block;
+	margin: 0 5px;
+	height: 30px;
+	width: 30px;
+}
+
+.socials:first-child {
+	margin-left: 0;
+}
+
+.socials:last-child {
+	margin-right: 0;
+}
+
+.socials.facebook {
+}
+
+.socials.linkedin {
+	background-position: -30px 0;
+}
+
+.socials.twitter {
+	background-position: -60px 0;
+}
+
+.demosched {
+	background: url("images/demosched.png") no-repeat;
+	display: block;
+	height: 20px;
+	width: 144px;
+}
+
+#content {
+	padding: 40px 0;
+}
+
+.title1 {
+	text-transform: uppercase;
+    color: #d30000;
+}
+
+.title2 {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-style: italic;
+	font-size: 1.8em;
+}
+
+#content .a .title1,
+#content .b .title2 {
+	text-align: center;
+}
+
+.centered {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.clear {
+	clear: both;
+}
+/*
+ ## Global styles
+ */
+
+/*
+ ## Contact Page
+ */
+.contact #content {
+	background: url("images/map.png") no-repeat top center;
+	padding-bottom: 65px;
+	padding-top: 65px;
+}
+
+.contact #content p {
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 30px;
+	margin: 10px 0;
+}
+
+.contact #content .contact_image {
+	background: url("images/contactus.png") no-repeat;
+	margin-bottom: 30px;
+	height: 46px;
+	width: 322px;
+}
+
+.contact #content .wpcf7-form input[type="image"] {
+	float: right;
+}
+
+.contact #content .wpcf7-form textarea,
+.contact #content .wpcf7-form input[type="text"],
+.contact #content .wpcf7-form input[type="email"],
+.contact #content .wpcf7-form input[type="number"] {
+	background-color: #b3b2b2;
+	-webkit-box-shadow: inset 0 2px 5px -2px #000;
+	-moz-box-shadow: inset 0 2px 5px -2px #000;
+	box-shadow: inset 0 2px 5px -2px #000;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;	
+	margin-bottom: 20px;
+	padding: 4px 15px;
+}
+
+.contact #content .wpcf7-form input[type="text"],
+.contact #content .wpcf7-form input[type="email"],
+.contact #content .wpcf7-form input[type="number"] {
+	height: 35px;
+}
+
+.contact #content .wpcf7-form textarea::-webkit-input-placeholder,
+.contact #content .wpcf7-form input[type="text"]::-webkit-input-placeholder,
+.contact #content .wpcf7-form input[type="email"]::-webkit-input-placeholder,
+.contact #content .wpcf7-form input[type="number"]::-webkit-input-placeholder {
+	font-style: italic;
+    color: #000;
+}
+
+.contact #content .wpcf7-form textarea:-moz-placeholder,
+.contact #content .wpcf7-form input[type="text"]:-moz-placeholder,
+.contact #content .wpcf7-form input[type="email"]:-moz-placeholder,
+.contact #content .wpcf7-form input[type="number"]:-moz-placeholder {
+	font-style: italic;
+	color: #000;
+}
+
+.contact #content .wpcf7-form textarea:-ms-input-placeholder,
+.contact #content .wpcf7-form input[type="text"]:-ms-input-placeholder,
+.contact #content .wpcf7-form input[type="email"]:-ms-input-placeholder,
+.contact #content .wpcf7-form input[type="number"]:-ms-input-placeholder {
+	font-style: italic;
+	color: #000;
+}
+/*
+ ## Contact Page
+ */
+
+ /*
+ ## Pricing Page
+ */
+.pricing #prices {
+	text-align: center;
+	margin: 45px auto;
+	width: 848px;
+}
+
+.pricing #prices ul,
+.pricing #prices ul li {
+	float: left;
+}
+
+.pricing #prices ul li {
+	background-color: #fff;
+	border: 1px solid #b3b3b3;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	overflow: hidden;
+	margin: 0 10px 10px;
+	width: 260px;
+}
+
+.pricing .gradients {
+	background: url("images/gradients.png") repeat-x;
+}
+
+.pricing .gradients.g1 {
+	background-position: 0 0;
+}
+
+.pricing .gradients.g2 {
+	background-position: 0 -60px;
+}
+
+.pricing .buttons {
+	background: url("images/buttons.png") no-repeat;
+	display: block;
+	height: 42px;
+	width: 152px;
+}
+
+.pricing .buttons.plan {
+}
+
+.pricing #prices .top,
+.pricing #prices .mid {
+	border-bottom: 1px solid #b3b3b3;
+}
+
+.pricing #prices .top p,
+.pricing #prices .top h3,
+.pricing #prices .mid h2 {
+	margin: 0;
+}
+
+.pricing #prices .top {
+	color: #fff;
+}
+
+.pricing #prices .top h3 {
+	line-height: 22px;
+	font-size: 22px;
+}
+
+.pricing #prices .bot .spec,
+.pricing #prices .bot .link,
+.pricing #prices .top .inner {
+	padding: 8px;
+}
+
+.pricing #prices .mid .inner {
+	padding: 10px;
+}
+
+.pricing #prices .bot .spec {
+	border-bottom: 1px solid #e7e7e7;
+}
+ /*
+ ## Pricing Page
+ */
+
+ /*
+ ## Blog Page
+ */
+#sidebar1 h3 {
+	text-transform: uppercase;
+	font-size: 1.5em;
+	color: #d30000;
+}
+#sidebar1 ul {
+	margin: 0;
+}
+#sidebar1 ul li {
+	list-style-type: none;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+#sidebar1 ul li a {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-style: italic;
+	font-size: 1.5em;
+	color: #333;
+}
+
+#posts .post {
+	margin-bottom: 60px;
+}
+
+#posts .post:last-child {
+	margin-bottom: 0;
+}
+
+#posts .inner {
+	padding: 20px 20px 0 20px;
+}
+
+#posts .post_image {
+}
+
+#posts .post_image img {
+	width: 100%;
+}
+
+#posts .post_date,
+#posts .post_data,
+#posts .post_title {
+	margin-bottom: 10px;
+}
+
+#posts .post_title .title2 {
+	text-align: left;
+	font-size: 2.5em;
+	margin: 0;
+}
+
+#posts .post_title .title2 a {
+	color: #333;
+}
+
+#posts .post_date span,
+#posts .post_date span a {
+	color: #d30000;
+}
+
+#posts .post_date span {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#posts .post_data .divider {
+	border: 1px solid #000;
+	width: 50%;
+}
+
+.paging {
+	padding: 35px 35px 0;
+}
+
+.paging a {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-style: italic;
+	font-size: 2.2em;
+	color: #333;
+}
+ /*
+ ## Blog Page
+ */
+
+/*
+ ## Technology Page
+ */
+.techbanner {
+}
+
+.techbanner .top {
+	/*background: url("images/techs.png") no-repeat;*/
+	position: relative;
+	display: block;
+	height: 265px;
+	width: 900px;
+}
+
+.techbanner .top .crphone {
+	background: transparent url("images/phone.png") no-repeat;
+	position: absolute;
+	height: 485px;
+	width: 232px;
+	left: 40px;
+	top: 30px;
+}
+
+.techbanner .bot {
+	padding: 20px 20px 20px 300px;
+}
+
+.techbanner .bot .title1,
+.techbanner .bot .title2 {
+	margin-top: 0;
+}
+
+.techbanner .bot p,
+.techbanner .bot .title1,
+.techbanner .bot .title2 {
+	margin-bottom: 20px;
+}
+
+.techbanner .bot .more {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-style: italic;
+	font-size: 1.8em;
+	color: #d30000;
+}
+
+.technology #content .e .title1 {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	text-transform: none;
+	text-align: center;
+	font-style: italic;
+	font-size: 3em;
+}
+
+#content #features .row-fluid {
+	margin-bottom: 30px;
+}
+#content #demos .demo,
+#content #features .feature {
+	text-align: center;
+}
+#content #demos .text,
+#content #features .text {
+	padding: 0 20px;
+}
+/*
+ ## Technology Page
+ */
+
+/*
+ ## Use Cases Page
+ */
+.platforms,
+.platforms.android {
+	background: url("images/cases/platforms.png") no-repeat;
+	display: block;
+	margin: 0 5px;
+	height: 62px;
+	width: 52px;
+}
+.platforms:first-child {
+	margin-left: 0;
+}
+.platforms:last-child {
+	margin-right: 0;
+}
+.platforms.macos {
+	background-position: -52px 0px;
+	width: 51px;
+
+}
+
+#apps .platf .platforms {
+	float: left;
+}
+
+#apps .platf img {
+	margin: 0 5px;
+}
+#apps .platf img:first-child {
+	margin-left: 0;
+}
+#apps .platf img:last-child {
+	margin-right: 0;
+}
+
+#apps .descs {
+	margin: 20px 0;
+}
+
+#apps .links a {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.8em;
+	color: #333;
+}
+
+#apps .appmsg {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	text-align: center;
+	font-style: italic;
+	font-size: 1.8em;
+	margin: 40px 0;
+}
+/*
+ ## Use Cases Page
+ */
+
+
+@media (max-width: 979px) {
+	#footer .container,
+	#content .container,
+	.usecases #content .container,
+	.technology #content .container,
+	.technology #content .container .techbanner .top {
+		width: auto;
+	}
+
+	.techbanner .bot {
+		padding: 300px 0px 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	/*
+	 ## Global styles
+	 */
+	#content {
+	    padding-right: 20px;
+	    padding-left: 20px;
+	}
+
+	/*
+	 ## Global styles
+	 */
+
+	/*
+	 ## Contact Page
+	 */
+	#footer .l,
+	#footer .r {
+		padding: 0 20px;
+	}
+
+	#footer .links,
+	#footer .links li {
+		float: none;
+	}
+
+	#footer .links li {
+		margin: 0 0 10px 0;
+	}
+
+	#footer .links li.divider-vertical {
+		display: none;
+	}
+
+	#content .wpcf7-form textarea,
+	#content .wpcf7-form input[type="text"],
+	#content .wpcf7-form input[type="email"],
+	#content .wpcf7-form input[type="number"] {
+		margin-left: 0;
+	}
+	/*
+	 ## Contact Page
+	 */
+
+	/*
+	 ## Pricing Page
+	 */
+	.pricing #prices {
+		width: 282px;
+	}
+	/*
+	 ## Pricing Page
+	 */
+}

@@ -1,0 +1,1 @@
+[09-Jan-2013 13:38:42] PHP Fatal error:  Call to undefined function  get_header() in /home/loftynew/public_html/stageCR/wp-content/themes/captivereach/index.php on line 1

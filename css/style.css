@@ -1,0 +1,262 @@
+/**** Bootstrap overrides ****/
+.navbar .nav li a {
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-top: 36px;
+	color: #fff;
+}
+
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner {
+    box-shadow: none;
+}
+
+.navbar-inverse .navbar-inner {
+    background-color: transparent;
+    background-image: none;
+    border: none;
+}
+
+.navbar-inverse .nav .active > a,
+.navbar-inverse .nav .active > a:hover,
+.navbar-inverse .nav .active > a:focus {
+    background-color: transparent;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+    box-shadow: none;
+}
+
+.navbar-inverse .divider-vertical {
+    border-left-color: #d30000;
+    border-right-color: #d30000;
+}
+
+.navbar .divider-vertical {
+    height: 15px;
+    margin-top: 38px;
+}
+
+.navbar .btn,
+.navbar .btn-group {
+    margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+	body {
+	    padding-right: 0;
+	    padding-left: 0;
+	}
+}
+
+@media (max-width: 979px) {
+	.navbar {
+	    padding-top: 0;
+	}
+
+	.navbar .nav li a {
+		padding-top: 9px;
+	}
+
+	.navbar-inverse .nav-collapse .nav > li > a:hover,
+	.navbar-inverse .nav-collapse .dropdown-menu a:hover {
+		background-color: transparent;
+	}
+}
+/**** Bootstrap overrides ****/
+
+body {
+	background: transparent url("../images/honeycomb-w.png");
+}
+
+.section-top {
+	background: #020202 url("../images/honeycomb.png") repeat-x;
+	padding-top: 30px;
+}
+
+.section-top a,
+.section-top .title.sub,
+.section-top .title.main {
+	text-transform: uppercase;
+}
+
+.section-top a,
+.section-top .title.main {
+	color: #fff;
+}
+
+.section-top a {
+	font-size: 17px;
+}
+
+.section-top .title.main {
+	font-weight: normal;
+	line-height: 70px;
+	font-size: 70px;
+}
+
+.section-top .title.sub {
+	font-weight: bold;
+	margin: 25px 0;
+	color: #d30000;
+}
+
+.section-top #content .l {
+	position: relative;
+}
+
+.section-top #content .l .crphone {
+	background: transparent url("../images/phone.png") no-repeat;
+	position: absolute;
+	height: 485px;
+	width: 232px;
+	right: 0;
+	top: 30px;
+}
+
+.section-top #content .r {
+	padding: 40px 0;
+}
+
+.section-bot {
+	-webkit-box-shadow: inset 0 8px 6px -8px #000000;
+	-moz-box-shadow: inset 0 8px 6px -8px #000000;
+	box-shadow: inset 0 8px 6px -8px #000000;
+}
+
+.section-bot .title {
+	text-transform: uppercase;
+	text-align: center;
+	margin: 60px 0 0;
+	color: #d30000;
+}
+
+footer .links ul,
+footer .links ul li {
+	float: left;
+}
+
+footer .links {
+	margin: 0 auto;
+	width: 420px;
+}
+
+footer .links ul {
+	list-style: none;
+	margin: 0;
+}
+
+footer .links ul li {
+}
+
+footer .links ul li a {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #333;
+}
+
+footer .links ul li.divider-vertical {
+	border-right: 1px solid #333;
+	border-left: 1px solid #333;
+	margin: 4px 10px 0 10px;
+    height: 12px;
+}
+
+.customer-logos ul,
+.customer-logos ul li {
+	float: left;
+}
+
+.customer-logos {
+	margin: 45px auto;
+	width: 715px;
+}
+
+.customer-logos ul {
+	list-style: none;
+	margin: 0;
+}
+
+.customers {
+	background: url("../images/customers.png") no-repeat;
+	margin: 0 10px;
+	height: 75px
+}
+
+.customers:first-child {
+	margin-left: 0;
+}
+
+.customers:last-child {
+	margin-right: 0;
+}
+
+.customers.cox {
+	width: 112px;
+}
+
+.customers.zingle {
+	background-position: -112px 0;
+	width: 87px;
+}
+
+.customers.delmar {
+	background-position: -199px 0;
+	width: 87px;
+}
+
+.customers.elwiri {
+	background-position: -286px 0;
+	width: 90px;
+}
+
+.customers.playar {
+	background-position: -376px 0;
+	width: 93px;
+}
+
+.customers.medifast {
+	background-position: -469px 0;
+	width: 143px;
+}
+
+.clear {
+	clear: both;
+}
+
+@media (max-width: 767px) {
+	.section-top #content .l .crphone {
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.section-top #content .r {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	.section-top .title.main {
+		font-size: 60px;
+	}
+
+	.customer-logos {
+		width: auto;
+	}
+
+	.section-bot {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	footer .links {
+		width: auto;
+	}
+}
+
+@media (max-width: 480px) {
+	.section-top .title.main {
+		font-size: 300%;
+	}
+}
